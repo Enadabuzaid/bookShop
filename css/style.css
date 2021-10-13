@@ -40,6 +40,11 @@ html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
 
+section{
+    padding: 5rem 9%;
+
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -262,6 +267,58 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 
+/* login form End */
+
+/* home section start  */
+.home{
+    background: url(../image/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.home .row .content{
+    flex:1 1 42rem;
+}
+
+.home .row .book-slider{
+    flex:1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .book-slider a img{
+    height: 25rem;
+}
+
+.home .row .book-slider a:hover img{
+    transform: scale(.9);
+}
+
+.home .row .book-slider .stand{
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home .row .content p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+/* home section end  */
 
 
 /* media queries */
@@ -272,6 +329,11 @@ html::-webkit-scrollbar-thumb{
 
     .header .header-1{
         padding: 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+        
     }
 }
 
@@ -310,6 +372,14 @@ html::-webkit-scrollbar-thumb{
 
     .header .header-1 .form-search.active{
         top: 115%;
+    }
+
+    .home .row .content{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
     }
 }
 
