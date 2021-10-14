@@ -34,7 +34,7 @@ window.onload = () =>{
     }
 }
 
-// custome swiper js 
+// custome swiper for stand  js 
 var swiper = new Swiper(".book-slider", {
     loop:true,
     centerdSlides:true,
@@ -53,6 +53,41 @@ var swiper = new Swiper(".book-slider", {
       },
       1024: {
         slidesPerView: 3,
+       
+      },
+    },
+  });
+
+
+// custome swiper for feature book js
+var swiper = new Swiper(".featured-slider", {
+    spaceBetween:10,
+    loop:true,
+    centerdSlides:true,
+    autoplay:{
+        delay:4500,
+        disableOnInteraction:false,
+    },
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        
+      },
+      450: {
+        slidesPerView: 2,
+        
+      },
+      768: {
+        slidesPerView: 3,
+        
+      },
+      1024: {
+        slidesPerView: 4,
        
       },
     },
