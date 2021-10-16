@@ -32,6 +32,18 @@ window.onload = () =>{
     } else {
         document.querySelector('.header .header-2').classList.remove('active');
     }
+
+    // loader();
+    fadeOut();
+}
+
+// loader function
+function loader(){
+  document.querySelector('.loader-container').classList.add('active');
+}
+
+function fadeOut(){
+  setTimeout(loader,3000);
 }
 
 // custome swiper for stand  js 
@@ -93,7 +105,7 @@ var swiper = new Swiper(".featured-slider", {
     },
   });
 
-  // custum slide for new arrivals
+// custum slide for new arrivals
   var swiper = new Swiper(".arrivals-slider", {
     spaceBetween:10,
     loop:true,
@@ -117,3 +129,57 @@ var swiper = new Swiper(".featured-slider", {
       },
     },
   });
+
+
+// custum slide for reviws
+  var swiper = new Swiper(".reviews-slider", {
+      spaceBetween:10,
+      grabCursor:true,
+      loop:true,
+      centerdSlides:true,
+      autoplay:{
+          delay:9500,
+          disableOnInteraction:false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          
+        },
+        768: {
+          slidesPerView: 2,
+          
+        },
+        1024: {
+          slidesPerView: 3,
+         
+        },
+      },
+  });
+
+// custum slide for reviws
+var swiper = new Swiper(".blogs-slider", {
+  spaceBetween:10,
+  grabCursor:true,
+  loop:true,
+  centerdSlides:true,
+  navigation:{
+    nextEl:".swiper-button-next",
+    prevEl:".swiper-button-prev",
+
+},
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      
+    },
+    768: {
+      slidesPerView: 2,
+      
+    },
+    1024: {
+      slidesPerView: 3,
+     
+    },
+  },
+});
